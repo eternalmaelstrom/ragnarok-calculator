@@ -10,7 +10,8 @@ An **Eternal Maelstrom** community project aiming to build an accurate damage ca
 
 
 <br/>
----
+
+
 ## Project made using React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
