@@ -6,16 +6,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={`/logo.jpeg`} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+        <p style={{fontWeight: 'bold'}}>
+          Ragnarok Calculator
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://discord.gg/9Zqq9VyqH9"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Discord
         </a>
       </header>
     </div>
