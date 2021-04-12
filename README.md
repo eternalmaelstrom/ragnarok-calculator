@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Ragnarok Calculator
+
+<img src="https://yt3.ggpht.com/ytc/AAUvwnhR1_zNE-odf5HmKXWOD56xuwABIFObiUa18af8og=s176-c-k-c0x00ffffff-no-rj"/>
+
+<br/>
+<br/>
+
+An **Eternal Maelstrom** community project aiming to build an accurate damage calculator for Ragnarok Online players. We are players from [NovaRO](https://novaragnarok.com) and will be designing this calculator against that server.
+
+
+
+<br/>
+---
+## Project made using React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
