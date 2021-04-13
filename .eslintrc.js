@@ -28,7 +28,7 @@ module.exports = {
     ignorePatterns: [''],
     overrides: [
         {
-            "files": ["**/*.tsx"],
+            "files": ["**/*.tsx", "**/*.ts", "*.tsx", "*.ts"],
             "rules": {
                 "react/prop-types": "off"
             }

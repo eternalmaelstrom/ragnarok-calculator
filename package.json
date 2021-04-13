@@ -32,8 +32,8 @@
     "build-storybook": "build-storybook -s public",
     "gen:i18:keys": "ts-node --project scripts/tsconfig.json scripts/generateTranslationTypes.ts",
     "i18": "yarn gen:i18:keys",
-    "lint:check": "eslint src/**/*.{ts,tsx} --quiet",
-    "lint:fix": "eslint src/**/*.{ts,tsx} --quiet --fix",
+    "lint:check": "eslint src --ext .ts,.tsx --quiet",
+    "lint:fix": "eslint src --ext .ts,.tsx --quiet --fix",
     "format:check": "prettier --check src",
     "format:fix": "prettier --write src"
   },

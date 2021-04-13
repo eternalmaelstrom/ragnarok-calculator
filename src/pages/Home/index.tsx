@@ -2,7 +2,7 @@ import Container from '@material-ui/core/Container';
 import React from 'react';
 import BuildForm from '../../components/BuildForm';
 
-const Home: React.FC<{}> = () => {
+const Home: React.FC = () => {
    return (
       <>
          <Container>

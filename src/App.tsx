@@ -2,7 +2,7 @@ import React from 'react';
 import Providers from './Providers';
 import Routes from './Routes';
 
-const App: React.FC<{}> = () => {
+const App: React.FC = () => {
    return (
       <Providers>
          <Routes />

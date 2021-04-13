@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-interface ProvidersProps {}
-const Providers: React.FC<ProvidersProps> = ({ children }) => {
+const Providers: React.FC = ({ children }) => {
    return <BrowserRouter>{children}</BrowserRouter>;
 };
 
