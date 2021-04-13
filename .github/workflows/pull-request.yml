@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  terraform:
-    name: "Terraform"
+  sanity:
+    name: "Check linting and formatting"
     runs-on: ubuntu-latest
 
     steps:
