@@ -1,0 +1,55 @@
+
+name: "Deploy"
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    name: "Terraform"
+    runs-on: ubuntu-latest
+
+    env:
+      STORAGE_ACCOUNT: ${{ secrets.STORAGE_ACCOUNT }}
+      STORAGE_CONTAINER: ${{ secrets.STORAGE_CONTAINER }}
+      CDN_PROFILE: ${{ secrets.CDN_PROFILE }}
+      CDN_ENDPOINT: ${{ secrets.CDN_ENDPOINT }}
+      ROCALC_RESOURCE_GROUP: ${{ secrets.ROCALC_RESOURCE_GROUP }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - name: Install packages
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Setup Azure CLI
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDS }}
+
+      - name: Upload to blob storage
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.21.0
+          inlineScript: |
+              az storage blob upload-batch --account-name "${STORAGE_ACCOUNT}" -d "${STORAGE_CONTAINER}" -s ./build
+
+      - name: Purge CDN endpoint
+          uses: azure/CLI@v1
+          with:
+            azcliversion: 2.21.0
+            inlineScript: |
+              az cdn endpoint purge --content-paths  "/*" --profile-name "${CDN_PROFILE}" --name "${CDN_ENDPOINT}" --resource-group "${ROCALC_RESOURCE_GROUP}"
+
+      - name: Azure Logout
+        run: |
+            az logout

@@ -1,0 +1,14 @@
+{
+    "build": {
+        "baseLevel": "Base Level",
+        "str": "STR",
+        "agi": "AGI",
+        "vit": "VIT",
+        "int": "INT",
+        "dex": "DEX",
+        "luk": "LUK",
+        "weaponLevel": "Weapon Level",
+        "weaponRefine": "Weapon Refine",
+        "weaponBaseAttack": "Weapon Base Attack"
+    }
+}
