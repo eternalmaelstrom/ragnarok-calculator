@@ -1,5 +1,16 @@
 # Ragnarok Calculator
 
+<a href="https://cdn-rocalc-em-prod.azureedge.net/">
+    <img src="https://github.com/eternalmaelstrom/ragnarok-calculator/workflows/Deploy/badge.svg"/>
+</a>
+
+<a href="https://discord.gg/9Zqq9VyqH9">
+<img src="https://img.shields.io/badge/Eternal%20Maelstrom-7289DA?label=Discord&logo=discord"/>
+</a>
+
+<br/>
+<br/>
+
 <img src="https://yt3.ggpht.com/ytc/AAUvwnhR1_zNE-odf5HmKXWOD56xuwABIFObiUa18af8og=s176-c-k-c0x00ffffff-no-rj"/>
 
 <br/>
